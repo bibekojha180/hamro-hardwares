@@ -1,0 +1,72 @@
+ body {
+            background-color: rgb(70, 36, 36);
+            color: white;
+            text-align: center;
+            background-image: url('C:\\Users\\Lenovo\\OneDrive\\Pictures\\Screenshots\\construction.jpg');
+            background-size: cover;
+            background-color: rgba(88, 80, 80, 0.2);
+            background-position: top fixed;
+            background-repeat: no-repeat;
+            filter: brightness(100%);  
+        }
+        /* General button styling */
+button {
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease; /*for smooth animation */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: rgb(83, 92, 15);       /* changes color */
+    color: white;                 /* text color changes */
+    transform: scale(1.1);        /* grows slightly */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* shadow effect */
+}
+
+
+        
+        h1{
+
+            color: rgb(245, 245, 248);
+            font-family: Cambria, Cochin, Georgia, Times, 'cursive', serif;
+            align-items: center;  
+        }
+            .images {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+            }
+            .images img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50px;
+                transition: transform 0.3s ease;
+            }
+            .images img:hover {
+                transform: scale(1.08);
+            }
+            h2{
+                color: rgb(249, 250, 250);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 28px;
+                align-items: left;
+            }
+            .bib{
+                color: rgb(253, 255, 255);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 22px;
+                align-items: center;
+            }
+            p{
+                color: rgb(253, 255, 255);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 22px;
+                align-items: left;
+            }

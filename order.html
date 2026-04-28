@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamro Hardwares - Order Form</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: aquamarine;
+      margin: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+     
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 10px auto;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    #orderForm {
+      background-color: #fff;
+    }
+    label {
+      
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #deacac;
+      border-radius: 4px;
+    }
+    .checkbox-group {
+      margin-top: 10px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: #d7e960;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2><b>Customer Order Form</b></h2>
+
+  <form action="submit_form.php" method="post" id="orderForm">
+    <!-- Personal Information -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" placeholder="+977 98********" id="phone" name="phone" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" placeholder="your.email@example.com" id="email" name="email" required>
+
+    <!-- Product Selection -->
+    <label>Select Products:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="products" value="Cements"> Cements</label><br>
+      <label for="quant"> Quantity: </label>
+      <input type="number" placeholder="Required no of bags." id="quant" name="quant" min="1">
+      <label><input type="checkbox" name="products" value="Steels"> Steels</label><br>
+      <label for="quant"> Quantity: </label>
+      <input type="number" placeholder="Required no of kgs." id="quant" name="quant" min="1">
+      <label><input type="checkbox" name="products" value="Paints"> Paints</label><br>
+      <label for="quant"> Quantity: </label>
+      <input type="number" placeholder="Required no of ltrs." id="quant" name="quant" min="1">
+    </div>
+
+    <!-- Comments -->
+    <label for="comments">Comments:</label>
+    <textarea id="comments" placeholder="Enter your comments here..." name="comments" rows="4"></textarea>
+
+    <!-- Suggestions -->
+    <label for="suggestions">Suggestions:</label>
+    <textarea id="suggestions" placeholder="Enter your suggestions here..." name="suggestions" rows="4"></textarea>
+
+    <!-- Submit -->
+    <button type="submit">Complete Order</button>
+  </form>
+
+</body>
+</html>
